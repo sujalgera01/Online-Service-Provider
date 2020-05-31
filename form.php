@@ -8,7 +8,7 @@
 <h1>Fill all the details correctly</h1>
 <hr>
 
-	<form method="post">
+	<form method="post" action="register.php">
 	<table>
 		<tr>
 			<td>First Name: </td>
