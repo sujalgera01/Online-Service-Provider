@@ -29,7 +29,5 @@ if($conn->connect_error){
 $sql = "INSERT INTO services (firstname,lastname,email,mobile,pickup,droploc) 
 		VALUES ('$fname','$lname','$mail','$mobile','$location1','$location2')";
 		$conn->query($sql);
-		header('location: form.php');
-
-
+		header('location: thank.php');
 ?>
