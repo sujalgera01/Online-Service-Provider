@@ -28,12 +28,8 @@ if($conn->connect_error){
 
 $sql = "INSERT INTO services (firstname,lastname,email,mobile,pickup,droploc) 
 		VALUES ('$fname','$lname','$mail','$mobile','$location1','$location2')";
-		if($conn->query($sql) === TRUE){
-	echo "Record created Successfully";
-}else{
-	echo "error";
-}
-
+		$conn->query($sql);
+		header('location: form.php');
 
 
 ?>
