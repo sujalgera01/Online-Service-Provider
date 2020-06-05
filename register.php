@@ -12,11 +12,12 @@ function val($data){
 	$data = stripcslashes($data);
 	$data = htmlspecialchars($data);
 	return $data;
+
 }
 
 $servername = "localhost";
 $username = "root";
-$password = ""; //Add your database password
+$password = ""; //Add your database password that you have created
 $dbName = "osp";
 
 $conn = new mysqli($servername,$username,$password,$dbName);
